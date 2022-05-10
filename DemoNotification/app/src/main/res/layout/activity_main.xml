@@ -1,17 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_send_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <View
+        android:id="@+id/image_view"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:text="Send Notification!"
-       />
+        android:layout_marginTop="25dp" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/camera_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/secondary_btn"
+    >
+        <View
+            android:id="@+id/camera_btn_container"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/secondary_btn_container"
+        />
+
+        <View
+            android:id="@+id/camera_btn_focus_ring"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/secondary_btn_focus_ring"
+        />
+
+        <TextView
+            android:id="@+id/camera_btn_label"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/camera_button"
+            android:textAppearance="@style/secondary_btn"
+            android:textFontWeight="500"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/choose_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/secondary_btn"
+        >
+        <View
+            android:id="@+id/choose_btn_container"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/secondary_btn_container"
+            />
+
+        <View
+            android:id="@+id/choose_btn_focus_ring"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/secondary_btn_focus_ring"
+            />
+
+        <TextView
+            android:id="@+id/choose_btn_button_labe"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:text="@string/choose_button"
+            android:textSize="19dp"
+            android:textFontWeight="500"
+            android:textAppearance="@style/secondary_btn"
+            android:gravity="center_horizontal|center_vertical"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/button_prim"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/button_prim"
+    >
+
+        <View
+            android:id="@+id/button_prim_container"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/prim_btn_container"
+        />
+
+        <View
+            android:id="@+id/button_prim_focus_ring"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/prim_btn_focus_ring" />
+
+        <TextView
+            android:id="@+id/button_labe"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/detec_button"
+            android:textAppearance="@style/primary_btn"
+            android:textFontWeight="500"
+            android:textSize="26dp" />
+    </RelativeLayout>
 
 </RelativeLayout>
